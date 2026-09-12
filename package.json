@@ -1,0 +1,42 @@
+{
+  "name": "@webgune/cli",
+  "version": "0.1.0",
+  "description": "CLI officiel de webgune.cloud — déployez et gérez vos services depuis le terminal.",
+  "keywords": [
+    "webgune",
+    "cli",
+    "deploy",
+    "paas",
+    "kubernetes",
+    "devops"
+  ],
+  "homepage": "https://webgune.cloud",
+  "bugs": {
+    "url": "https://webgune.cloud/support"
+  },
+  "author": "webgune",
+  "license": "UNLICENSED",
+  "type": "module",
+  "bin": {
+    "webgune": "./dist/index.js"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "bun run src/index.ts",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0"
+  }
+}
